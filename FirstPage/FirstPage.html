@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Child Section</title>
+  <link rel="stylesheet" href="FirstPage.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo">
+      <img src="../sih-images/logo3.1.png" alt="Logo" />
+    </div>
+    <h1 id="headerTitle">Child Section</h1>
+    <aside>
+      <div id="form" class="langg">
+        <form>
+          <h2 id="formTitle">Select your Language preference</h2>
+          <select id="languageSelector" title="English" onchange="changeLanguage()">
+            <option value="en">English</option>
+            <option value="hi">हिन्दी</option>
+            <option value="bn">Bengali (বাংলা)</option>
+            <option value="as">Assamese (অসমীয়া)</option>
+            <option value="doi">Dogri (डोगरी)</option>
+            <option value="brx">Bodo (बर'मा)</option>
+            <!-- Add more language options as needed -->
+          </select>
+        </form>
+      </div>
+    </aside>
+  </header>
+  
+  <div class="container">
+    <div class="card">
+      <h2 id="preambleText">Preamble</h2>
+    </div>
+    <div class="card">
+      <h2 id="fundamentalRightsText"><a href="/ChildSection/main/main.html" style="text-decoration: none; color: #495057 ;">Fundamental Right</a></h2>
+    </div>
+    <div class="card">
+      <h2 id="fundamentalDutiesText">Fundamental Duties</h2>
+    </div>
+    <div class="card">
+      <h2 id="directivePrinciplesText">Directive Principles of State Policy</h2>
+    </div>
+  </div>
+
+   <!-- sound for buttons -->
+   <audio id="hover-sound" src="/ChildSection/Audio-sounds/button.wav" preload="auto"></audio>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+   <script src="./FirstPage.js"></script>
+   <script src="/ChildSection/audio.js"></script>
+</body>
+</html>

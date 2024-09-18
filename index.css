@@ -9,7 +9,6 @@ body{
 	background-color: #c6c4fe;
   background: linear-gradient(180deg, #f0f0f0, 5%, #e1dbee, 70%, #8B5FE3);
 }
-
 /* hide scrollbar for chrome */
 body::-webkit-scrollbar{
   display: none;
