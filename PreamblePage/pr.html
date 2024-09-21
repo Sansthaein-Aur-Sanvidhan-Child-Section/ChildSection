@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preamble</title>
+    <link rel="stylesheet" href="pr.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+          <img src="../sih-images/logo3.1.png" alt="Website Logo">
+        </div>
+        <h1 class="heading">PREAMBLE</h1>
+        <aside>
+            <div id="form" class="langg">
+              <form>
+                <h2 id="formTitle">Select your Language preference</h2>
+                <select id="languageSelector" title="English" onchange="changeLanguage()">
+                  <option value="en">English</option>
+                  <option value="hi">हिन्दी</option>
+                  <option value="bn">Bengali (বাংলা)</option>
+                  <option value="as">Assamese (অসমীয়া)</option>
+                  <option value="doi">Dogri (डोगरी)</option>
+                  <option value="brx">Bodo (बर'मा)</option>
+                  <!-- Add more language options as needed -->
+                </select>
+              </form>
+            </div>
+          </aside>
+    </header>
+
+    <div class="firstWord">
+        <p id="fwp-text" class="fwp"></p>
+    </div>
+    <div class="gif-container"></div>
+        <img src="../sih-gif/turtle.gif" alt="Preamble GIF" class="gif-image">
+    </div>
+
+    <div class="gif-container"></div>
+    <img src="../sih-gif/turtle.gif" alt="Preamble GIF" class="gif-image2">
+</div>
+
+    <div class="citizenship-container">
+        <h2>📖 Let's Dive Deeper into Part II of the Constitution of India!</h2>
+        <!-- Content continues as before -->
+        <p>
+            <span class="highlight">What is Citizenship?</span><br>
+            Being a citizen means that you belong to a country. Citizens have rights, like the right to vote, and responsibilities, like following the country's laws. In India, <strong>Part II of the Constitution</strong> explains who is an Indian citizen.
+          </p>
+          
+          <h3>📝 Detailed Breakdown of Articles:</h3>
+          
+          <div class="article">
+            <h4>Article 5</h4>
+            <p>At the time India became a republic (January 26, 1950), anyone who lived in India, was born in India, or whose parents were born in India would be an Indian citizen.</p>
+          </div>
+        
+          <div class="article">
+            <h4>Article 6</h4>
+            <p>After independence, some people moved from Pakistan to India. If they moved before July 19, 1948, they automatically became citizens. After that, they needed government permission.</p>
+          </div>
+        
+          <div class="article">
+            <h4>Article 7</h4>
+            <p>This article explains that people who moved to Pakistan but returned to India could still be citizens if the government allowed it.</p>
+          </div>
+        
+          <div class="article">
+            <h4>Article 8</h4>
+            <p>People of Indian origin living outside India, whose parents or grandparents were born in India, could apply to be citizens.</p>
+          </div>
+        
+          <div class="article">
+            <h4>Article 9</h4>
+            <p>India does not allow dual citizenship. If you become a citizen of another country, you lose Indian citizenship.</p>
+          </div>
+        
+          <div class="article">
+            <h4>Article 10</h4>
+            <p>Once you’re an Indian citizen, you stay a citizen unless the law says otherwise.</p>
+          </div>
+        
+          <div class="article">
+            <h4>Article 11</h4>
+            <p>This article gives Parliament the power to make laws about who can be a citizen or lose citizenship.</p>
+          </div>
+        
+          <h3>🧐 Why is this Important?</h3>
+          <p>When India became independent, we needed rules to know who was a citizen. Citizens have:</p>
+          <ul>
+            <li><strong>Rights:</strong> Only citizens can vote and have special rights.</li>
+            <li><strong>Responsibilities:</strong> Citizens follow laws and help the country grow.</li>
+          </ul>
+          
+          <h3>🔄 Changes to Citizenship</h3>
+          <p>Over time, the rules about citizenship have changed, like with the Citizenship Act of 1955. Parliament can change these rules as needed.</p>
+          
+          <h3>💡 Summary:</h3>
+          <ul class="summary">
+            <li>Part II explains who is an Indian citizen after independence.</li>
+            <li>It covers people who moved between India and Pakistan and those living abroad.</li>
+            <li>It gives Parliament the power to create and change laws about citizenship.</li>
+          </ul>
+    </div>
+
+    <script>
+        const text = "WE, THE PEOPLE OF INDIA, having solemnly resolved to constitute India into a SOVEREIGN SOCIALIST SECULAR DEMOCRATIC REPUBLIC and to secure to all its citizens: JUSTICE, social, economic, and political; LIBERTY of thought, expression, belief, faith, and worship; EQUALITY of status and of opportunity, and to promote among them all; FRATERNITY assuring the dignity of the individual and the unity and integrity of the Nation; IN OUR CONSTITUENT ASSEMBLY this twenty-sixth day of November, 1949, do HEREBY ADOPT, ENACT AND GIVE TO OURSELVES THIS CONSTITUTION.";
+
+        let index = 0;
+        function typeText() {
+            const element = document.getElementById("fwp-text");
+            if (index < text.length) {
+                element.innerHTML += text.charAt(index);
+                index++;
+                setTimeout(typeText, 40);  // Adjust typing speed here
+            }
+        }
+        window.onload = typeText;
+    </script>
+    <script src="pr_script.js"></script>
+</body>
+</html>

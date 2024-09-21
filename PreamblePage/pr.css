@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    /* background-color: #f9f7fd; */
+    background: linear-gradient(180deg, #f0f0f0, 5%, #e1dbee, 70%, #8B5FE3);
+    color: #333;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    animation: backgroundAnimation 5s ease-in-out infinite alternate;
+}
+
+/* hide scrollbar for chrome */
+body::-webkit-scrollbar{
+    display: none;
+  }
+
+  /* hide scrollbar for firefox */
+  body::-webkit-scrollbar{
+    scrollbar-width: none;
+  }
+
+@keyframes backgroundAnimation {
+    0% { background-color: #f9f7fd; }
+    100% { background-color: #f3e6ff; }
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #9d4edd;
+    padding: 10px 20px;
+    height: 100px;
+}
+
+.logo img {
+    width: 90px;
+    transition: transform 0.5s;
+}
+
+.logo img:hover {
+    transform: rotate(360deg);
+}
+
+.heading {
+    flex-grow: 1;
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+    font-weight: 800;
+    margin-left: -100px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.heading:hover {
+    transform: scale(1.1);
+}
+
+.firstWord {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e0aaff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1.5s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fwp {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+    padding: 10px;
+    position: relative;
+    animation: bounceIn 2s ease-in-out;
+}
+
+.fwp .highlight {
+    font-weight: bold;
+    color: #9d4edd;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, rgba(157,78,221,1) 0%, rgba(255,64,129,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes bounceIn {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.citizenship-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h2, h3 {
+    color: #9d4edd;
+}
+
+h4 {
+    color: #6200ea;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.article {
+    background-color: #e0aaff;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 10px;
+    position: relative;
+    transition: background-color 0.3s, transform 0.5s ease-in-out;
+}
+
+.article:hover {
+    background-color: #d4a1f3;
+    transform: scale(1.05);
+}
+
+.highlight {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff4081;
+}
+
+ul {
+    list-style-type: '⭐';
+}
+
+.summary li {
+    padding: 10px 0;
+    font-weight: bold;
+    animation: slideIn 1.5s ease;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* gif */
+.gif-image {
+    background-image: url('../sih-gif/turtle.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin-top: -100px;
+   margin-left: 20px;
+}
+.gif-image2{
+    background-image: url('../sih-gif/turtle.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+    position: relative;
+    margin-top: -500px;
+    transform: scaleX(-1); /* Flips the GIF horizontally */
+    transition: transform 0.5s ease; /* Optional: Adds a smooth transition effect */
+    margin-left: 80%;  
+}
+
+  #form {
+    position: relative;
+  }
+  
+  #form select {
+    font-family: "Montserrat", sans-serif;
+    font-size: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #form h2 {
+    font-size: 15px;
+    margin-bottom: 8px;
+    color: white;
+  }
