@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+    background: linear-gradient(180deg, #f0f0f0, 5%, #e1dbee, 70%, #8B5FE3);
+    color: #4A235A;
+  }
+  
+  .header {
+    display: flex;
+    
+    padding: 15px;
+    background-color: #9d4edd;
+    text-align: center;
+    
+  }
+  
+  .logo {
+    width: 80px;
+    margin-right: 20px;
+  }
+  
+  .header h1 {
+    font-size: 2.8rem;
+    color: #fff;
+  }
+  .title-container{
+    margin-left: 20%;
+    justify-content: center;
+    align-content: center;
+  }
+  
+  .intro-section, .principles-section, .explanation-section {
+    text-align: center;
+    padding: 30px;
+    margin: 20px auto;
+    max-width: 900px;
+  }
+  
+  .intro-section h2, .principles-section h2 {
+    font-size: 2rem;
+    color: #7D3C98;
+    animation: fadeIn 2s ease-in-out;
+  }
+  
+  .intro-section p {
+    font-size: 1.4rem;
+    margin-top: 15px;
+    color: #5A306B;
+  }
+  
+  .principles-list {
+    list-style: none;
+    margin-top: 30px;
+    font-size: 1.4rem;
+  }
+  
+  .principles-list li {
+    background-color: #e0aaff;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s;
+    position: relative;
+  }
+  
+  .principles-list li:hover {
+    background-color: #c77dff;
+    transform: scale(1.05);
+  }
+  
+  .explanation-section {
+    background-color: #F5EEF8;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 2px solid #7D3C98;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .show {
+    opacity: 1;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #C39BD3;
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 30px;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
